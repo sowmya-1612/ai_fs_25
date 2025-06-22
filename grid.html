@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <style>
+            .container {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-rows: 100px 1fr;
+            }
+            .header {
+                background-color: #8e475e;
+                display: flex;
+                flex-direction: row;
+                font-size: 40px;
+                color: azure;
+                gap: 30px;
+                
+                
+            }
+            .main{
+                background-color: blue;
+                display: grid;
+                grid-template-columns: 200px 1fr;
+                
+
+            }
+            .sidebar {
+                background-color: #f1a3a9;
+                font-size: 25px;
+                display: none;
+            }
+            .content1 {
+                background-color: white;
+                display: grid;
+                grid-template-rows: 500px 1fr;
+                text-align: center;
+            }
+            .Content {
+                background-color: rgb(255, 0, 89);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .footer {
+                background-color: #772727;
+                font-size: 50px;
+            }
+            .imagetext {
+                position: relative;
+                border: 2px solid black;
+                width: 50%;
+                height: 50%;
+
+
+            }
+            .texti {
+                position: absolute;
+                font-size: 40px;
+            }
+            @media (
+                min-width:1024px
+            ) {
+            .sidebar {
+                display: flex ;
+                flex-direction: column;
+            } }
+</style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                    <img src="image.jpg" alt="image" width="200px">
+                    <div><a href="home.html">home</a></div>
+                    <div><a href="aboutus.html">aboutus</a></div>
+                    <div><a href="contactus.html">contactus</a></div>
+            </div>
+            <div class="main">
+                <div class="sidebar">
+                    <div><a href="form.html">studentform</a></div>
+                    <div><a href="Report.html">Report</a></div>
+                </div>
+                <div class="content1">
+                    <div class="Content">
+                        <div class="imagetext">
+
+                        
+                        <div class="texti">Hello</div>
+                        <img src="image1.webp" alt="hello" width="100%">
+                        </div>
+                    </div>
+                    <div class="footer">Footer</Footer></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
