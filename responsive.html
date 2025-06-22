@@ -1,0 +1,74 @@
+<html>
+<head>
+    <style>
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100vh; 
+        }
+
+        .container1, .container2, .container3, .container4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            height: 50%;
+            width: 50%;
+            color: black;
+            gap: 20px;
+        }
+
+        .container1 { background-color: #d4e6f1; }
+        .container2 { background-color: #7fb3d5; }
+        .container3 { background-color: #1f618d; }
+        .container4 { background-color: #154360 ; color: black; }
+
+        .child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 80%;
+            height: 60%;
+            font-size: 40px;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 50px; 
+            height: 25px;  
+            margin: 10px;  
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="container1">
+            <div class="child">
+            </div>
+        </div>
+        <div class="container2">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="container3">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="container4">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
